@@ -1,0 +1,156 @@
+/* UNIVERSAL RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:#0d0d0d;
+    color:white;
+}
+
+/* HERO */
+.hero{
+    height:100vh;
+    background:url('images/shamani.jpg') no-repeat center center/cover;
+    position:relative;
+}
+.hero .overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:linear-gradient(45deg,#000000e3,#00000080);
+}
+.hero-content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+}
+.hero-content h1{
+    font-size:80px;
+    font-weight:700;
+}
+.hero-content p{
+    margin:20px 0;
+    font-size:22px;
+}
+.btn{
+    padding:12px 25px;
+    background:linear-gradient(45deg,#ff0055,#ff9900,#00c6ff);
+    border-radius:30px;
+    color:white;
+    font-weight:bold;
+    text-decoration:none;
+    transition:0.3s;
+}
+.btn:hover{
+    opacity:0.8;
+}
+
+/* SECTIONS — DIFFERENT GRADIENTS */
+section{
+    padding:80px 10%;
+    color:white;
+    border-radius:20px;
+    margin:80px 0;
+}
+
+/* ABOUT SECTION - PURPLE to BLUE SHINY */
+.about{
+    background:linear-gradient(135deg,#5a00ffb2,#00c8ffb4);
+}
+
+/* CAREER SECTION - ORANGE to RED PREMIUM */
+.career{
+    background:linear-gradient(135deg,#ff7a00b0,#ff0055b0);
+}
+
+/* TIMELINE SECTION - BLUE to CYAN GLOW */
+.timeline{
+    background:linear-gradient(135deg,#005effb2,#00e5ffb2);
+}
+
+/* QUOTE SECTION - BLACK GLASS EFFECT GRADIENT */
+.quotes{
+    background:linear-gradient(135deg,#111111c9,#222222c9,#000000c9);
+    backdrop-filter:blur(10px);
+}
+
+/* GALLERY SECTION - PINK to PURPLE HIGH-SHINE */
+.gallery{
+    background:linear-gradient(135deg,#ff00d4b2,#7a00ffb2);
+}
+
+/* CONTACT SECTION - TEAL to BLUE SMOOTH */
+.contact{
+    background:linear-gradient(135deg,#00ffaab2,#007bffb2);
+    text-align:center;
+}
+
+/* CAREER BOX */
+.career-box{
+    background:#111;
+    padding:25px;
+    margin-bottom:20px;
+    border-radius:15px;
+    border:1px solid #333;
+}
+
+/* TIMELINE */
+.timeline-item{
+    margin:20px 0;
+    padding-left:20px;
+    border-left:4px solid #ff0055;
+}
+.timeline-item span{
+    font-size:20px;
+    color:#ff9900;
+    font-weight:bold;
+}
+
+/* QUOTES */
+.quote-box{
+    background:#111;
+    padding:15px;
+    border-radius:10px;
+    margin:10px auto;
+    max-width:700px;
+    border:1px solid #333;
+    font-size:20px;
+}
+
+/* GALLERY GRID */
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
+}
+.gallery-grid img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+/* SCROLL ANIMATION */
+.reveal{
+    opacity:0;
+    transform:translateY(40px);
+    transition:0.8s ease;
+}
+.reveal.active{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:30px;
+    background:#000;
+    margin-top:30px;
+}
